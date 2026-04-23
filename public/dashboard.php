@@ -1,4 +1,6 @@
+
 <?php
+ include('../includes/header.php');
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -6,5 +8,5 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 ?>
-
 <h1>Welcome <?php echo $_SESSION['user']['nom']; ?></h1>
+

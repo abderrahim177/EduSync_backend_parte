@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
     header("Location: ../public/register.php?error=password");
     exit();
 }
-    // Hash password 🔐
+    // Hash password 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Insert DB
@@ -38,7 +38,7 @@ if (isset($_POST['register'])) {
 if (isset($_POST['login'])) {
 
     $email = cleanInput($_POST['email']);
-    $password = $_POST['password'];
+    $password =cleanInput($_POST['password']);
 
     $sql = "SELECT * FROM users WHERE email = ?";
     $stmt = $pdo->prepare($sql);
