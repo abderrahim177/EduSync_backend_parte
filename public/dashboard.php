@@ -87,7 +87,7 @@ if (!isset($_SESSION['user'])) {
                     <p class="text-gray-500">Users</p>
                     <h3 class="text-3xl font-bold">120</h3>
                 </div>
-                <div class="bg-blue-100 p-4 rounded-full">
+                <div class="bg-blue-100 px-5 py-4 rounded-full">
                     <i class="fa-solid fa-user text-blue-500 text-xl"></i>
                 </div>
             </div>
@@ -100,7 +100,7 @@ if (!isset($_SESSION['user'])) {
                     <p class="text-gray-500">Messages</p>
                     <h3 class="text-3xl font-bold">54</h3>
                 </div>
-                <div class="bg-green-100 p-4 rounded-full">
+                <div class="bg-green-100 px-5 py-4 rounded-full">
                     <i class="fa-solid fa-envelope text-green-500 text-xl"></i>
                 </div>
             </div>
@@ -113,7 +113,7 @@ if (!isset($_SESSION['user'])) {
                     <p class="text-gray-500">Revenue</p>
                     <h3 class="text-3xl font-bold">$2,450</h3>
                 </div>
-                <div class="bg-yellow-100 p-4 rounded-full">
+                <div class="bg-yellow-100 px-5 py-4 rounded-full">
                     <i class="fa-solid fa-sack-dollar text-yellow-500 text-xl"></i>
                 </div>
             </div>
