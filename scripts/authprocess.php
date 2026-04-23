@@ -27,7 +27,6 @@ if (isset($_POST['register'])) {
     // Hash password 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     // check if user was created ?
-    // CHECK IF EMAIL EXISTS
     $sql = "SELECT id FROM users WHERE email = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$email]);
@@ -36,7 +35,7 @@ if (isset($_POST['register'])) {
         // email déjà kayn
         header("Location: ../public/login.php?error=exists");
         exit();
-    }
+   }
     // Insert DB
     $sql = "INSERT INTO users (nom, prenom, email, password) VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
