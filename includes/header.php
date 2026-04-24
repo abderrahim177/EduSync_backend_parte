@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .logo {
+         font-family: 'Aref Ruqaa', serif;
+        }
+    </style>
 </head>
 <body>
     <header class="flex justify-between items-center h-[70px] px-[30px] bg-[#252543] text-white sticky top-0 z-10 ring-4 ring-[#404041] ">
-       <h1 class="text-2xl font-bold  text-blue-400">
+       <h1 class="logo text-4xl font-bold  text-blue-400">
         EduSync
         </h1>
         <nav class="flex gap-[30px] items-center">
