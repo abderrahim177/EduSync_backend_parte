@@ -22,15 +22,6 @@
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Sign in to your account
               </h1>
-                <?php if (isset($_GET['error'])): ?>
-                <p class="text-red-500 text-sm mb-3">
-                <?php
-                if ($_GET['error'] == "empty") echo "Tous les champs sont obligatoires";
-                if ($_GET['error'] == "email") echo "Email invalide";
-                if ($_GET['error'] == "password") echo "Les mots de passe ne correspondent pas";
-                ?>
-            </p>
-        <?php endif; ?>
               <form class="space-y-4 md:space-y-6" action="../scripts/authprocess.php" method="post">
                   <div>
                       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
