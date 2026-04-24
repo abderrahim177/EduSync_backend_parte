@@ -52,7 +52,6 @@ if (isset($_POST['login'])) {
     $sql = "SELECT * FROM users WHERE email = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$email]);
-
     $user = $stmt->fetch();
 
     if ($user && password_verify($password, $user['password'])) {

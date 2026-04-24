@@ -45,7 +45,7 @@ if (!isset($_SESSION['user'])) {
             <i class="fa-solid fa-gear"></i> Settings
         </a>
 
-        <a href="#" class="flex items-center gap-3 hover:bg-red-600 p-3 rounded-lg mt-10 transition">
+        <a href="../scripts/logout.php" class="flex items-center gap-3 hover:bg-red-600 bg-red-700 p-3 rounded-lg mt-10 transition">
             <i class="fa-solid fa-right-from-bracket"></i> Logout
         </a>
 
